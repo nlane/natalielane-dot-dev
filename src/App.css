@@ -69,8 +69,8 @@ main {
   min-height: 450px;
 }
 
-@media (max-width: 800px) {
-  .gif {
+@media (max-width: 820px) {
+  .media {
     width: 300px;
   }
   .content {

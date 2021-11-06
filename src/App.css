@@ -12,7 +12,6 @@ nav {
   background-color: #40e0d0;
   font-size: 1.2em;
   text-align: center;
-  height: 100px;
 }
 
 nav h1 {
@@ -66,7 +65,7 @@ main {
   align-items: center;
   justify-content: center;
   height: calc(100vh - 100px);
-  min-height: 450px;
+  min-height: 550px;
 }
 
 @media (max-width: 820px) {

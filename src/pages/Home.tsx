@@ -1,8 +1,13 @@
 import React from "react";
 
-const Home = () => {
+type Props = {
+  setStars: (val: boolean) => void;
+};
+
+const Home = ({ setStars }: Props) => {
+  setStars(true);
   return (
-    <div>
+    <div className="main">
       <div className="greetings">
         <p className="name">Hi, I'm Natalie.</p>
         <p className="name">I come in peace ✌️</p>

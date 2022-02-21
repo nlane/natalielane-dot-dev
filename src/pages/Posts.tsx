@@ -1,6 +1,11 @@
 import React from "react";
 
-const Home = () => {
+type Props = {
+  setStars: (val: boolean) => void;
+};
+
+const Posts = ({ setStars }: Props) => {
+  setStars(false);
   return (
     <div className="content">
       <h2>This is where a post would go...</h2>
@@ -13,4 +18,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Posts;

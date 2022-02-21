@@ -9,13 +9,13 @@
 .main {
   position: absolute;
   z-index: 1;
-  top: 45;
 }
 
 #logo {
-  vertical-align: middle;
-  line-height: 50px;
   margin-left: 10px;
+  width: 50px;
+  height: 45px;
+  margin-top: 3px;
 }
 
 .content {
@@ -45,7 +45,7 @@ nav {
   line-height: 50px;
 }
 
-nav a {
+nav .right-link {
   color: black;
   text-decoration: none;
   height: 100%;
@@ -58,18 +58,15 @@ nav a {
   border-right: black solid;
 }
 
-nav a:hover {
+nav .right-link:hover {
   color: #fafafa;
   background-color: rgb(255, 155, 41);
 }
 
 main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: calc(100vh - 100px);
-  min-height: 550px;
+  margin-top: 100px;
 }
 
 .alien {
@@ -77,7 +74,6 @@ main {
 }
 
 .greetings {
-  /* margin-top: 100px; */
   background-color: black;
   color: white;
   font-size: 2.5em;
@@ -87,8 +83,25 @@ main {
   margin: 10px;
 }
 
+.posts {
+  text-align: left;
+  min-height: auto;
+}
+
+.monster {
+  text-align: center;
+}
+
+.monster img {
+  width: 400px;
+}
+
 @media (max-width: 820px) {
   .alien {
+    width: 300px;
+  }
+
+  .monster img {
     width: 300px;
   }
 
@@ -108,12 +121,6 @@ main {
     font-size: 1.5em;
   }
 }
-
-/* html {
-  height: 100%;
-  background: radial-gradient(ellipse at bottom, #282c34 0%, #090a0f 100%);
-  overflow: hidden;
-} */
 
 #stars {
   content: "e";

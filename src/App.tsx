@@ -1,29 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import { Home, About, Posts } from "./pages";
 
 function App() {
+  const [stars, setStars] = useState(true);
   return (
     <Router>
       <div className="App">
+        {stars && (
+          <>
+            <div id="stars"></div>
+            <div id="stars2"></div>
+          </>
+        )}
         <nav>
-          <span id="logo">Natalie Lane</span>
+          <Link to="/">
+            <img id="logo" src="nl.png" alt="nl" />
+          </Link>
           <div className="link-group">
-            <Link to="/" className="link-border">
+            <Link to="/" className="link-border right-link">
               Home
             </Link>
-            <Link to="/about">About</Link>
-            <Link to="/posts" className="link-border">
+            <Link to="/about" className="right-link">
+              About
+            </Link>
+            <Link to="/posts" className="link-border right-link">
               Posts
             </Link>
           </div>
         </nav>
-        <main>
+        <main className={stars ? "" : "posts"}>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/posts" element={<Posts />} />
+            <Route path="/" element={<Home setStars={setStars} />} />
+            <Route path="/about" element={<About setStars={setStars} />} />
+            <Route path="/posts" element={<Posts setStars={setStars} />} />
           </Routes>
         </main>
       </div>

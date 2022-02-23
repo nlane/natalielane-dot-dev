@@ -12,7 +12,7 @@ Here's the thing that gave me pause though when I read that review. How expensiv
 
 Let's say you do dish out $1,000 to get the new iPhone. If you want to use your traditional style headphones with it, you have to shake the piggy bank for an extra $9 to get the headphone jack adapter. Why isn't that just included in the price for the phone? Take a second to imagine the outrage that would occur if Apple didn't include the messages app with their phone. If you had to pay $3 to download it, I'm sure criticism would escalate beyond the review section of the app store. I find it really hard to believe, however, that Apple puts a lot more money into that adapter than they do into the messages app.
 
-<img class="post-gif" style="width:400px;height:400px" src="https://imgs.xkcd.com/comics/xkcd_phone_4.png"/>
+<img class="post-gif" src="https://imgs.xkcd.com/comics/xkcd_phone_4.png"/>
 <p class="img-caption">xkcd</p>
 
 We have a double standard when it comes to software and hardware - and it makes sense. Sure I'll dish out extra cash for the device which I can see and hold. Of course it costs so much with all the chips and circuits inside. That app on my phone? That news website? There are so many of those it can't be that hard to make. Why should I pay for an application when there is almost always a free alternative?

@@ -196,6 +196,14 @@ pre {
   .greetings {
     font-size: 1.5em;
   }
+
+  .post-gif {
+    width: 200px;
+  }
+
+  .img-caption {
+    width: 200px;
+  }
 }
 
 #stars {

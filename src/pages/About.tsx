@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 type Props = {
   setStars: (val: boolean) => void;
 };
 
 const About = ({ setStars }: Props) => {
-  setStars(false);
+  useEffect(() => setStars(false), [setStars]);
   return (
     <div className="content">
       <h2>A little about me...</h2>

@@ -7,10 +7,8 @@ Each night before you go to bed write down three things you did well that day. T
 
 A popular term these days, imposter syndrome is a feeling of inadequacy despite evidence of success. You fear being exposed as an "imposter" as you attribute your accomplishments to luck. It is very common and not unique to being in the field of technology. That being said, I believe that being in the field of technology can make these feelings more prominent and longer term.
 
-<div class="comic-contain">
-<br><img src="https://imgs.xkcd.com/comics/impostor_syndrome.png"/>
-<figcaption><i>via xkcd</i></figcaption>
-</div><br>
+<img class="post-gif" src="https://imgs.xkcd.com/comics/impostor_syndrome.png"/>
+<p class="img-caption">xkcd</p>
 
 If you ask any software developer, they will tell you that a good portion of their day is spent looking at online resources. It's not because they are bad at their jobs, it's because technology is constantly evolving and no one can keep up. Most developers use multiple languages and libraries throughout their career. Even if you tend to use the same tools, updates within those tools force you to relearn them as you go. This is why half of a developers time could be spent learning and problem solving rather than actively writing code.
 

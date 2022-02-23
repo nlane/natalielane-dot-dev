@@ -4,6 +4,7 @@ import Markdown from "markdown-to-jsx";
 import techEdu from "./blogPosts/TechEdu.md";
 import imposterSyn from "./blogPosts/Imposter.md";
 import paying from "./blogPosts/Paying.md";
+import wordle from "./blogPosts/WordleSolver.md";
 
 type Props = {
   setStars: (val: boolean) => void;
@@ -15,15 +16,19 @@ const Posts = ({ setStars }: Props) => {
     <div className="content posts">
       <Routes>
         <Route path="/" element={<PostsHome />} />
-        <Route path="/techEducation" element={<BlogPost content={techEdu} />} />
         <Route
-          path="/imposterSyndrome"
+          path="/tech-education"
+          element={<BlogPost content={techEdu} />}
+        />
+        <Route
+          path="/imposter-syndrome"
           element={<BlogPost content={imposterSyn} />}
         />
         <Route
-          path="/payingForSoftware"
+          path="/paying-for-software"
           element={<BlogPost content={paying} />}
         />
+        <Route path="/wordle-solver" element={<BlogPost content={wordle} />} />
       </Routes>
     </div>
   );
@@ -33,21 +38,21 @@ const PostsHome = () => {
   return (
     <>
       <h2>Recent Posts</h2>
-      <p>Wordle Solver</p>
+      <Link to="/posts/wordle-solver">Wordle Solver</Link>
       <h3>Archive</h3>
       <ul>
         <li>
-          <Link to="/posts/techEducation">
+          <Link to="/posts/tech-education">
             Technology and Education (from Little Theorems)
           </Link>
         </li>
         <li>
-          <Link to="/posts/imposterSyndrome">
+          <Link to="/posts/imposter-syndrome">
             Imposter Syndrome (from Little Theorems)
           </Link>
         </li>
         <li>
-          <Link to="/posts/payingForSoftware">
+          <Link to="/posts/paying-for-software">
             Paying for Software (from Little Theorems)
           </Link>
         </li>

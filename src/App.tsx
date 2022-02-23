@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import { Home, About, Posts } from "./pages";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 function App() {
   const [stars, setStars] = useState(true);
+
   return (
     <Router>
       <div className={stars ? "App full-height" : "App"}>
@@ -46,11 +47,16 @@ function App() {
             <a
               href="https://www.linkedin.com/in/natalie-lane-893170a0/"
               target="_blank"
+              rel="noreferrer"
             >
-              <AiFillLinkedin />
+              <BsLinkedin />
             </a>
-            <a href="https://github.com/nlane/" target="_blank">
-              <AiFillGithub />
+            <a
+              href="https://github.com/nlane/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsGithub />
             </a>
           </div>
         </footer>

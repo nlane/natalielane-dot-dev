@@ -1,9 +1,31 @@
+body,
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .App {
   text-align: center;
-  min-height: 100vh;
-  height: 100%;
+  min-height: calc(100vh - 50px);
   background: radial-gradient(ellipse at bottom, #282c34 0%, #090a0f 100%);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100vw;
+  font-family: "Rubik", sans-serif;
+}
+
+.full-height {
+  min-height: calc(100vh);
+}
+
+a {
+  color: rgb(248, 183, 109);
+}
+
+a:hover {
+  color: rgb(255, 155, 41);
 }
 
 .main {
@@ -22,6 +44,7 @@
   color: white;
   width: 70%;
   font-size: 1.2em;
+  padding-bottom: 30px;
 }
 
 nav {
@@ -32,7 +55,7 @@ nav {
   height: 50px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 2;
 }
 
@@ -66,7 +89,7 @@ nav .right-link:hover {
 main {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .alien {
@@ -85,7 +108,6 @@ main {
 
 .posts {
   text-align: left;
-  min-height: auto;
 }
 
 .monster {
@@ -94,6 +116,60 @@ main {
 
 .monster img {
   width: 400px;
+}
+
+.footer-icons {
+  width: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-icons a {
+  font-size: 1.5em;
+  color: rgb(189, 189, 189);
+}
+
+.footer-icons a:hover {
+  color: rgb(255, 155, 41);
+}
+
+footer {
+  background-color: black;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+code {
+  background-color: rgb(26, 26, 26);
+  color: rgb(255, 232, 246);
+  padding: 3px;
+  border-radius: 3px;
+  white-space: pre;
+}
+
+pre {
+  overflow-x: auto;
+  padding-bottom: 22px;
+}
+
+.post-gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+.img-caption {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  margin-top: 0px;
+  font-size: 0.8em;
+  color: rgb(218, 218, 218);
 }
 
 @media (max-width: 820px) {

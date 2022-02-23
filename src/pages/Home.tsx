@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 type Props = {
   setStars: (val: boolean) => void;
 };
 
 const Home = ({ setStars }: Props) => {
-  setStars(true);
+  useEffect(() => setStars(true), [setStars]);
   return (
     <div className="main">
       <div className="greetings">

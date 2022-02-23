@@ -31,6 +31,10 @@ a:hover {
 .main {
   position: absolute;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 100px);
 }
 
 #logo {
@@ -203,6 +207,16 @@ pre {
 
   .img-caption {
     width: 200px;
+  }
+}
+
+@media (max-height: 600px) {
+  .alien {
+    width: 350px;
+  }
+
+  .greetings {
+    font-size: 1.5em;
   }
 }
 

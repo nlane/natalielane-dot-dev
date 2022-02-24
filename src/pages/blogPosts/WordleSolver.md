@@ -8,7 +8,7 @@ Some people love it and play every day while others avoid getting sucked into th
 
 So here is [my attempt](https://github.com/nlane/wordle-solver) at writing a program designed to efficiently solve Wordle puzzles. It's also my first real attempt to learn [Go](https://go.dev/). Why Go? Well without "go"-ing off on a tangent (heh) I want be strong in at least one statically typed language (I see you and appreciate you TypeScript, but you don't exactly count ❤️).
 
-## My Approach: A Mapping of Strings to a 5-Elemet Array of More Arrays of... Strings 😅
+## My Approach: A Mapping of Strings to a 5-Element Array of More Arrays of... Strings 😅
 
 My approach starts with a pretty complicated data structure that takes all the possible 5 letter words and indexes them by letters and their placement. A reduced example looks something like this:
 

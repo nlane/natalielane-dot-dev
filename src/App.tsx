@@ -18,7 +18,7 @@ function App() {
         )}
         <nav>
           <Link to="/">
-            <img id="logo" src="nl.png" alt="nl" />
+            <img id="logo" src="/nl.png" alt="nl" />
           </Link>
           <div className="link-group">
             <Link to="/" className="link-border right-link">
